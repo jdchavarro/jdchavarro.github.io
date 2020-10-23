@@ -7,23 +7,24 @@
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--purple);
-  font-family: "Lato";
   color: var(--white);
+  font-family: "Lato";
+  font-size: 16px;
 }
 
 /* Barra de Navegacion */
 
 nav {
+  height: 6.87rem;
+  font-size: 2em;
+  padding: 2rem 4rem;
   width: 100%;
-  height: 110px;
-  padding: 30px 70px;
-  font-size: 30px;
 }
 
 #brand {
@@ -35,29 +36,30 @@ nav {
   width: max-content;
   position: absolute;
   right: 0px;
-  top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--gray);
+  top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--gray);
 }
 
 #menuPrincipal li {
   display: inline;
-  margin-right: 130px;
+  margin-right: 8rem;
   color: var(--gray);
 }
 
 #menuPrincipal li:first-child {
-  border-bottom: 10px solid var(--white);
+  border-bottom: 0.5rem solid var(--white);
   color: var(--white);
 }
 
 #menuPrincipal li:last-child {
-  margin-right: 45px;
+  margin-right: 3rem;
 }
 
 /* Presentacion */
 section {
-  margin-left: 70px;
+  margin-left: 4.3em;
+  margin-top: -5.6em;
   display: grid;
   gap: 0;
   grid-template-areas:
@@ -67,79 +69,110 @@ section {
 
 #textPresentation {
   grid-area: textPresentation;
-  margin-top: 160px;
-  margin-left: 230px;
+  margin-top: 10em;
+  margin-left: 14.3em;
   width: max-content;
 }
 
 #photoPresentation {
   grid-area: photoPresentation;
-  position: relative;
+  height: 56.25em;
 }
 
 #photoPresentation svg {
   fill: var(--yellow);
-  margin-left: -50px;
-  width: 900px;
-  height: 900px;
+  margin-left: -3.12em;
+  width: 56.25em;
+  height: 56.25em;
 }
 
 #photoPresentation img {
   border-radius: 333px;
-  width: 666px;
-  height: 666px;
+  width: 41.625em;
+  height: 41.625em;
   position: relative;
-  top: -800px;
-  left: 98px;
+  top: -50em;
+  left: 6.125em;
 }
 
 #greeting {
   font-family: "Inconsolata";
-  font-size: 47px;
+  font-size: 3em;
 }
 
 #name {
-  font-size: 109px;
+  font-size: 7em;
   font-weight: bold;
   color: var(--yellow);
 }
 
 #summary {
-  font-size: 62px;
+  font-size: 4em;
   font-weight: bold;
   opacity: 68%;
 }
 
 #actions {
-  margin-top: -580px;
-  margin-left: 70px;
-  padding-top: 50px;
-  width: 100%;
-  height: 100%;
+  /* margin-top: -580px; */
+  padding-top: 3.125em;
   grid-area: actions;
-  border-left: 1px solid var(--gray);
-  padding-left: 160px;
+  border-left: 3px solid var(--gray);
+  padding-left: 14.375em;
+  height: max-content;
 }
 
 #actions button {
-  width: 460px;
-  height: 120px;
-  border-radius: 50px;
+  width: 28.75rem;
+  height: 7.5rem;
+  border-radius: 3.125rem;
   background-color: var(--white);
-  font-size: 48px;
+  font-size: 3em;
   font-family: "lato";
   font-weight: normal;
 }
 
 #socialButtons {
-  margin-top: 217px;
+  margin-top: 13.56em;
 }
 
 #socialButtons a {
   color: var(--gray);
-  font-size: 56px;
-  margin-right: calc((100% - 224px) / 4);
+  font-size: 3.5em;
+  margin-right: calc((100% - 14rem) / 4);
 }
 
-#socialButtons a:last-child {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1900px) {
+  body {
+    font-size: 16px;
+  }
 }
