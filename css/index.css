@@ -99,6 +99,7 @@ section {
 
 #actions button {
   border-radius: 50px;
+  border: 0;
   background-color: var(--gray);
   font-size: 3em;
   font-family: "lato";
