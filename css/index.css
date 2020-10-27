@@ -112,6 +112,18 @@ section {
   font-size: 3.5em;
 }
 
+#github:hover {
+  color: #fafafa;
+}
+#instagram:hover {
+  color: #e1306c;
+}
+#linkedin:hover {
+  color: #0077b5;
+}
+#twitter:hover {
+  color: #1da1f2;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
