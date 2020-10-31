@@ -183,7 +183,6 @@ footer {
     grid-template-areas:
       'textPresentation photoPresentation'
       'callToAction photoPresentation';
-    outline: 1px solid red;
   }
 
   #callToAction button {
