@@ -1,10 +1,13 @@
 :root {
-  --purple: #160c28;
-  --yellow: #efcb68;
-  --white: #e1efe6;
-  --gray: #aeb7b3;
-  --black: #000411;
-  --tam: 16px;
+  --light: #EEE5E9;
+  --grey: #7C7C7C;
+  --dark: #2B303A;
+  --lightblue: #92DCE5;
+  --red: #D64933;
+
+  --sm: 12px;
+  --md: 20px;
+  --lg: 32px;
 }
 
 * {
@@ -12,401 +15,46 @@
   padding: 0;
 }
 
-body {
-  background-color: var(--purple);
-  color: var(--white);
-  font-family: 'Lato';
+.jumbotron {
+  height: 100vh;
+  background-image: url("/assets/jumbotron-bg-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Lato", sans-serif;
 }
 
-/* Barra de Navegacion */
-nav {
-  font-size: 2em;
+.jumbotron div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-#brand {
-  text-decoration: none;
-  color: var(--white);
-}
-
-#menuPrincipal {
-  width: max-content;
-  position: absolute;
-  right: 0px;
-  border-bottom: 2px solid var(--gray);
-}
-
-#menuPrincipal li {
-  display: inline;
-  color: var(--gray);
-}
-
-#menuPrincipal li:first-child {
-  color: var(--white);
-}
-
-/* Presentacion */
-section {
-  display: grid;
-  gap: 0;
-  grid-template-areas:
-    'textPresentation photoPresentation'
-    'actions photoPresentation';
-}
-
-#textPresentation {
-  grid-area: textPresentation;
-  width: max-content;
-}
-
-#photoPresentation {
-  grid-area: photoPresentation;
-  position: relative;
-}
-
-#photoPresentation svg {
-  fill: var(--yellow);
-}
-
-#photoPresentation img {
-  border-radius: 333px;
-  position: absolute;
-  top: 6.2em;
-  left: 6.3em;
-}
-
-#greeting {
-  font-family: 'Inconsolata';
-  font-size: 3em;
-}
-
-#name {
-  font-size: 7em;
+.jumbotron .name,
+.jumbotron .profession {
+  font-size: var(--md);
   font-weight: bold;
-  color: var(--yellow);
 }
 
-#summary {
-  font-size: 4em;
-  font-weight: bold;
-  opacity: 68%;
+.jumbotron .name {
+  color: var(--light);
 }
 
-#actions {
-  grid-area: actions;
-  border-left: 3px solid var(--gray);
-  height: max-content;
+.jumbotron .profession {
+  color: var(--red);
+}
+.jumbotron .hobbies {
+  color: var(--lightblue);
+}
+.jumbotron .social-media {
+  color: var(--light);
 }
 
-#actions button {
-  border-radius: 50px;
-  border: 0;
-  background-color: var(--gray);
-  font-size: 3em;
-  font-family: 'lato';
-  font-weight: normal;
-  color: var(--black);
-}
-
-#socialButtons a {
-  color: var(--gray);
-  font-size: 3.5em;
-}
-
-#github:hover {
-  color: #fafafa;
-}
-#instagram:hover {
-  color: #e1306c;
-}
-#linkedin:hover {
-  color: #0077b5;
-}
-#twitter:hover {
-  color: #1da1f2;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 5px;
+@media (min-width: 640px) {
+  .jumbotron .name,
+  .jumbotron .profession {
+    font-size: var(--lg);
   }
-  /* Barra de Navegacion */
-  nav {
-    height: calc(0.3 * var(--tam) * 6.875);
-    padding: calc(0.3 * var(--tam) * 2) calc(0.6 * var(--tam) * 4);
-  }
-
-  #menuPrincipal {
-    top: calc(0.6 * var(--tam) * 2);
-    padding-bottom: calc(0.3 * var(--tam) * 2);
-  }
-
-  #menuPrincipal li {
-    margin-right: calc(0.3 * var(--tam) * 8);
-  }
-
-  #menuPrincipal li:first-child {
-    border-bottom: 4px solid var(--white);
-  }
-
-  #menuPrincipal li:last-child {
-    margin-right: calc(0.3 * var(--tam) * 3);
-  }
-
-  /* Presentacion */
-  section {
-    margin-left: calc(0.3 * var(--tam) * 4.375);
-    margin-top: calc(0.3 * var(--tam) * -3.75);
-  }
-
-  #textPresentation {
-    margin-top: calc(0.3 * var(--tam) * 10);
-    margin-left: calc(0.3 * var(--tam) * 14.375);
-  }
-
-  #photoPresentation {
-    height: calc(0.3 * var(--tam) * 56.25);
-  }
-  #photoPresentation svg {
-    margin-left: calc(0.3 * var(--tam) * -3.125);
-    width: calc(0.3 * var(--tam) * 56.25);
-    height: calc(0.3 * var(--tam) * 56.25);
-  }
-  #photoPresentation img {
-    width: calc(0.3 * var(--tam) * 41.625);
-    height: calc(0.3 * var(--tam) * 41.625);
-  }
-  #actions {
-    padding-top: calc(0.3 * var(--tam) * 3.125);
-    padding-left: calc(0.3 * var(--tam) * 14.375);
-  }
-  #actions button {
-    width: calc(0.3 * var(--tam) * 28.625);
-    height: calc(0.3 * var(--tam) * 7.5);
-  }
-  #socialButtons {
-    margin-top: calc(0.3 * var(--tam) * 13.5625);
-    padding-bottom: calc(0.3 * var(--tam) * 5.625);
-  }
-  #socialButtons a {
-    margin-right: calc((100% - (0.3 * var(--tam) * 14)) / 4);
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 8px;
-  }
-  /* Barra de Navegacion */
-  nav {
-    height: calc(0.5 * var(--tam) * 6.875);
-    padding: calc(0.5 * var(--tam) * 2) calc(0.5 * var(--tam) * 4);
-  }
-
-  #menuPrincipal {
-    top: calc(0.5 * var(--tam) * 2);
-    padding-bottom: calc(0.5 * var(--tam) * 2);
-  }
-
-  #menuPrincipal li {
-    margin-right: calc(0.5 * var(--tam) * 8);
-  }
-
-  #menuPrincipal li:first-child {
-    border-bottom: 6px solid var(--white);
-  }
-
-  #menuPrincipal li:last-child {
-    margin-right: calc(0.5 * var(--tam) * 3);
-  }
-
-  /* Presentacion */
-  section {
-    margin-left: calc(0.5 * var(--tam) * 4.375);
-    margin-top: calc(0.5 * var(--tam) * -3.75);
-  }
-
-  #textPresentation {
-    margin-top: calc(0.5 * var(--tam) * 10);
-    margin-left: calc(0.5 * var(--tam) * 14.375);
-  }
-
-  #photoPresentation {
-    height: calc(0.5 * var(--tam) * 56.25);
-  }
-  #photoPresentation svg {
-    margin-left: calc(0.5 * var(--tam) * -3.125);
-    width: calc(0.5 * var(--tam) * 56.25);
-    height: calc(0.5 * var(--tam) * 56.25);
-  }
-  #photoPresentation img {
-    width: calc(0.5 * var(--tam) * 41.625);
-    height: calc(0.5 * var(--tam) * 41.625);
-  }
-  #actions {
-    padding-top: calc(0.5 * var(--tam) * 3.125);
-    padding-left: calc(0.5 * var(--tam) * 14.375);
-  }
-  #actions button {
-    width: calc(0.5 * var(--tam) * 28.625);
-    height: calc(0.5 * var(--tam) * 7.5);
-  }
-  #socialButtons {
-    margin-top: calc(0.5 * var(--tam) * 13.5625);
-    padding-bottom: calc(0.5 * var(--tam) * 5.625);
-  }
-  #socialButtons a {
-    margin-right: calc((100% - (0.5 * var(--tam) * 14)) / 4);
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-    font-size: calc(0.6 * var(--tam));
-  }
-  /* Barra de Navegacion */
-  nav {
-    width: 1280px;
-    outline: 10px solid red;
-    height: calc(0.6 * var(--tam) * 6.875);
-    padding: calc(0.6 * var(--tam) * 2) calc(0.6 * var(--tam) * 4);
-  }
-
-  #menuPrincipal {
-    top: calc(0.6 * var(--tam) * 2);
-    padding-bottom: calc(0.6 * var(--tam) * 2);
-  }
-
-  #menuPrincipal li {
-    margin-right: calc(0.6 * var(--tam) * 8);
-  }
-
-  #menuPrincipal li:first-child {
-    border-bottom: 8px solid var(--white);
-  }
-
-  #menuPrincipal li:last-child {
-    margin-right: calc(0.6 * var(--tam) * 3);
-  }
-
-  /* Presentacion */
-  section {
-    width: 1280px;
-
-    outline: 10px solid red;
-    margin-left: calc(0.6 * var(--tam) * 4.375);
-    margin-top: calc(0.6 * var(--tam) * -3.75);
-  }
-
-  #textPresentation {
-    margin-top: calc(0.6 * var(--tam) * 10);
-    margin-left: calc(0.6 * var(--tam) * 14.375);
-  }
-
-  #photoPresentation {
-    height: calc(0.6 * var(--tam) * 56.25);
-  }
-  #photoPresentation svg {
-    margin-left: calc(0.6 * var(--tam) * -3.125);
-    width: calc(0.6 * var(--tam) * 56.25);
-    height: calc(0.6 * var(--tam) * 56.25);
-  }
-  #photoPresentation img {
-    width: calc(0.6 * var(--tam) * 41.625);
-    height: calc(0.6 * var(--tam) * 41.625);
-  }
-  #actions {
-    padding-top: calc(0.6 * var(--tam) * 3.125);
-    padding-left: calc(0.6 * var(--tam) * 14.375);
-  }
-  #actions button {
-    width: calc(0.6 * var(--tam) * 28.625);
-    height: calc(0.6 * var(--tam) * 7.5);
-  }
-  #socialButtons {
-    margin-top: calc(0.6 * var(--tam) * 13.5625);
-    padding-bottom: calc(0.6 * var(--tam) * 5.625);
-  }
-  #socialButtons a {
-    margin-right: calc((100% - (0.6 * var(--tam) * 14)) / 4);
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1920px) {
-  /* body {
-    font-size: 16px;
-    width: 1280px;
-  } */
-
-  /* Barra de Navegacion */
-  /* nav {
-    height: calc(var(--tam) * 6.875);
-    padding: calc(var(--tam) * 2) calc(var(--tam) * 4);
-  }
-
-  #menuPrincipal {
-    top: calc(0.6 * var(--tam) * 2);
-    padding-bottom: calc(var(--tam) * 2);
-  }
-
-  #menuPrincipal li {
-    margin-right: calc(var(--tam) * 8);
-  }
-
-  #menuPrincipal li:first-child {
-    border-bottom: 10px solid var(--white);
-  }
-
-  #menuPrincipal li:last-child {
-    margin-right: calc(var(--tam) * 3);
-  } */
-
-  /* Presentacion */
-  /* section {
-    margin-left: calc(var(--tam) * 4.375);
-    margin-top: calc(var(--tam) * -3.75);
-  }
-
-  #textPresentation {
-    margin-top: calc(var(--tam) * 10);
-    margin-left: calc(var(--tam) * 14.375);
-  }
-
-  #photoPresentation {
-    height: calc(var(--tam) * 56.25);
-  }
-  #photoPresentation svg {
-    margin-left: calc(0.6 * var(--tam) * -3.125);
-    width: calc(var(--tam) * 56.25);
-    height: calc(var(--tam) * 56.25);
-  }
-  #photoPresentation img {
-    width: calc(var(--tam) * 41.625);
-    height: calc(var(--tam) * 41.625);
-  }
-  #actions {
-    padding-top: calc(var(--tam) * 3.125);
-    padding-left: calc(var(--tam) * 14.375);
-  }
-  #actions button {
-    width: calc(var(--tam) * 28.625);
-    height: calc(var(--tam) * 7.5);
-  }
-  #socialButtons {
-    margin-top: calc(0.6 * var(--tam) * 13.5625);
-    padding-bottom: calc(var(--tam) * 5.625);
-  }
-  #socialButtons a {
-    margin-right: calc((100% - (var(--tam) * 14)) / 4);
-  } */
 }
