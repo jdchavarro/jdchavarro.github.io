@@ -1,13 +1,20 @@
 :root {
+  /* --primary : #D64933;
+  --secondary: #92DCE5;
   --light: #EEE5E9;
-  --grey: #7C7C7C;
   --dark: #2B303A;
-  --lightblue: #92DCE5;
-  --red: #D64933;
+  --grey: #7C7C7C; */
+  
+  --primary : #355691;
+  --secondary: #5F5AA2;
+  --light: #3F4045;
+  --dark: #30292f;
+  --grey: #413F54;
+ 
 
   --sm: 12px;
-  --md: 20px;
-  --lg: 32px;
+  --md: 24px;
+  --lg: 48px;
 }
 
 * {
@@ -17,44 +24,62 @@
 
 .jumbotron {
   height: 100vh;
-  background-image: url("/assets/jumbotron-bg-image2.jpg");
+  background-image: url("/assets/jumbotron-bg-image4.jpg");
   background-size: cover;
   background-position: center;
   font-family: "Lato", sans-serif;
-}
-
-.jumbotron div {
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: center;
 }
 
-.jumbotron .name,
-.jumbotron .profession {
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.name,
+.profession {
   font-size: var(--md);
   font-weight: bold;
 }
 
-.jumbotron .name {
-  color: var(--light);
+.name {
+  color: var(--dark);
 }
 
-.jumbotron .profession {
-  color: var(--red);
+.profession {
+  color: var(--primary);
 }
-.jumbotron .hobbies {
-  color: var(--lightblue);
+
+.hobbies {
+  font-size: var(--sm);
+  color: var(--secondary);
+  display: flex;
+  align-items: flex-start;
+  column-gap: 5px;
 }
-.jumbotron .social-media {
+
+.social-media {
   color: var(--light);
+  font-size: var(--md);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 640px) {
-  .jumbotron .name,
-  .jumbotron .profession {
+  .name,
+  .profession {
+    font-size: var(--lg);
+  }
+
+  .hobbies {
+    font-size: var(--md);
+  }
+
+  .social-media {
     font-size: var(--lg);
   }
 }
