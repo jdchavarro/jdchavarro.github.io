@@ -1,19 +1,18 @@
 :root {
-  
-  --primary : #355691;
-  --secondary: #5F5AA2;
-  --light: #3F4045;
+  --primary: #355691;
+  --secondary: #5f5aa2;
+  --light: #3f4045;
   --dark: #30292f;
-  --grey: #413F54;
+  --grey: #413f54;
   --white: white;
- 
+
   font-size: 62.5%;
 
   --xsm: 1.2rem;
   --sm: 1.8rem;
   --md: 3.6rem;
   --lg: 5.4rem;
-  --xlg: 9rem
+  --xlg: 9rem;
 }
 
 * {
@@ -77,4 +76,53 @@
 
 .jumbotron__social-media-icons:hover {
   color: var(--white);
+}
+
+/* navbar */
+.navbar {
+  font-family: "Inconsolata", monospace;
+  font-size: var(--sm);
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background-color: var(--white);
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__button {
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+.navbar__brand {
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.navbar__items {
+  color: var(--secondary);
+  list-style: none;
+}
+
+.navbar__item {
+  margin-top: 1rem;
+}
+
+.navbar__item a {
+  text-decoration: none;
+}
+
+.navbar__item a,
+.navbar__item a:visited,
+.navbar__item a:hover,
+.navbar__item a:active {
+  color: inherit;
 }

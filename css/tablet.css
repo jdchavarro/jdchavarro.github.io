@@ -16,3 +16,22 @@
 .jumbotron__social-media {
   font-size: var(--md);
 }
+
+/* navbar */
+.navbar {
+    font-size: var(--md);
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .navbar__button {
+    margin-right: 2rem;
+  }
+  
+  .navbar__brand {
+    margin-bottom: 1rem;
+  }
+    
+  .navbar__item {
+    margin-top: 1.5rem;
+  }

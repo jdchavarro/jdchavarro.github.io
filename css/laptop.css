@@ -2,7 +2,7 @@
 
 .jumbotron {
   background-image: url("/assets/jumbotron__background--laptop.jpg");
-  row-gap: 30rem;
+  justify-content: space-between;
 }
 
 .jumbotron__description {
@@ -16,4 +16,39 @@
 
 .jumbotron__social-media {
   font-size: var(--lg);
+}
+
+/* navbar */
+.navbar {
+  font-size: var(--sm);
+  position: sticky;
+  top: 0px;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.navbar__button {
+  display: none;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.navbar__brand {
+  margin-bottom: 0;
+}
+
+.navbar__items {
+  display: flex;
+  margin-top: 0;
+}
+
+.navbar__item {
+  padding: 0 1rem;
+  cursor: pointer;
 }

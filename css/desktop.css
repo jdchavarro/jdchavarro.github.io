@@ -1,18 +1,25 @@
 /* Jumbotron */
 
 .jumbotron {
-    background-image: url("/assets/jumbotron__background--desktop.jpg");
-  }
-  
-  .jumbotron__description {
-    row-gap: 2rem;
-    font-size: var(--xlg);
-  }
-  
-  .jumbotron__phrase {
-    font-size: var(--lg);
-  }
-  
-  .jumbotron__social-media {
-    font-size: var(--xlg);
-  }
+  background-image: url("/assets/jumbotron__background--desktop.jpg");
+}
+
+.jumbotron__description {
+  row-gap: 1rem;
+  font-size: var(--xlg);
+}
+
+.jumbotron__phrase {
+  font-size: var(--lg);
+}
+
+.jumbotron__social-media {
+  font-size: var(--xlg);
+}
+
+/* navbar */
+.navbar {
+    font-size: var(--md);
+    max-width: 192rem;
+    margin-left: calc((100vw - 192rem) / 2);
+}
