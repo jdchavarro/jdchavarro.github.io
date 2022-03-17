@@ -70,6 +70,10 @@
   justify-content: space-evenly;
 }
 
+.jumbotron__social-media-icons a {
+  color: var(--light);
+}
+
 .jumbotron__social-media-icons:visited {
   color: inherit;
 }
