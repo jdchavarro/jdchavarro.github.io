@@ -1,86 +1,79 @@
 :root {
-  /* --primary : #D64933;
-  --secondary: #92DCE5;
-  --light: #EEE5E9;
-  --dark: #2B303A;
-  --grey: #7C7C7C; */
   
   --primary : #355691;
   --secondary: #5F5AA2;
   --light: #3F4045;
   --dark: #30292f;
   --grey: #413F54;
+  --white: white;
  
   font-size: 62.5%;
 
-  --sm: 12px;
-  --md: 24px;
-  --lg: 48px;
+  --xsm: 1.2rem;
+  --sm: 1.8rem;
+  --md: 3.6rem;
+  --lg: 5.4rem;
+  --xlg: 9rem
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* jumbotron */
 
 .jumbotron {
   height: 100vh;
-  background-image: url("/assets/jumbotron-bg-image4.jpg");
+  background-image: url("/assets/jumbotron__background--phone.jpg");
   background-size: cover;
   background-position: center;
   font-family: "Lato", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.description {
+  color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
+  justify-content: space-around;
 }
 
-.name,
-.profession {
-  font-size: var(--md);
+.jumbotron__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  font-size: var(--sm);
+}
+
+.jumbotron__name,
+.jumbotron__profession {
   font-weight: bold;
 }
 
-.name {
-  color: var(--dark);
-}
-
-.profession {
+.jumbotron__name {
   color: var(--primary);
 }
 
-.hobbies {
-  font-size: var(--sm);
+.jumbotron__profession {
   color: var(--secondary);
-  display: flex;
-  align-items: flex-start;
-  column-gap: 5px;
 }
 
-.social-media {
+.jumbotron__phrase {
+  font-size: var(--xsm);
+}
+
+.jumbotron__social-media {
   color: var(--light);
-  font-size: var(--md);
+  font-size: var(--sm);
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-@media (min-width: 640px) {
-  .name,
-  .profession {
-    font-size: var(--lg);
-  }
+.jumbotron__social-media-icons:visited {
+  color: inherit;
+}
 
-  .hobbies {
-    font-size: var(--md);
-  }
-
-  .social-media {
-    font-size: var(--lg);
-  }
+.jumbotron__social-media-icons:hover {
+  color: var(--white);
 }

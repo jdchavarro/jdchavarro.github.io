@@ -1,0 +1,18 @@
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url("/assets/jumbotron__background--tablet.jpg");
+}
+
+.jumbotron__description {
+  row-gap: 1rem;
+  font-size: var(--md);
+}
+
+.jumbotron__phrase {
+  font-size: var(--sm);
+}
+
+.jumbotron__social-media {
+  font-size: var(--md);
+}

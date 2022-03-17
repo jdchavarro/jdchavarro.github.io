@@ -1,0 +1,19 @@
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url("/assets/jumbotron__background--laptop.jpg");
+  row-gap: 30rem;
+}
+
+.jumbotron__description {
+  row-gap: 1.5rem;
+  font-size: var(--lg);
+}
+
+.jumbotron__phrase {
+  font-size: var(--md);
+}
+
+.jumbotron__social-media {
+  font-size: var(--lg);
+}
