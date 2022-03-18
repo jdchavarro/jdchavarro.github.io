@@ -19,19 +19,41 @@
 
 /* navbar */
 .navbar {
-    font-size: var(--md);
-    padding-top: 2rem;
-    padding-left: 2rem;
-  }
-  
-  .navbar__button {
-    margin-right: 2rem;
-  }
-  
-  .navbar__brand {
-    margin-bottom: 1rem;
-  }
-    
-  .navbar__item {
-    margin-top: 1.5rem;
-  }
+  font-size: var(--md);
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar__button {
+  margin-right: 2rem;
+}
+
+.navbar__brand {
+  margin-bottom: 1rem;
+}
+
+.navbar__item {
+  margin-top: 1.5rem;
+}
+
+/* ABOUT */
+.about {
+  font-size: var(--sm);
+}
+
+.about .bx {
+  font-size: var(--lg);
+}
+
+.about__main-title {
+  padding: 2rem 3rem;
+}
+
+.about__secondary-title {
+  padding-bottom: 2rem;
+}
+
+.about__presentation,
+.about__skills {
+  padding: 4rem calc((100vw - 48rem) / 2);
+}

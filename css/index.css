@@ -94,6 +94,8 @@
 .navbar__button {
   align-self: flex-end;
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__menu {
@@ -125,4 +127,46 @@
 .navbar__item a:hover,
 .navbar__item a:active {
   color: inherit;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  justify-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: var(--xsm);
+}
+
+.about .bx {
+  font-size: var(--md);
+}
+
+.about__main-title {
+  color: var(--primary);
+  padding: 1rem 2rem;
+}
+
+.about__secondary-title {
+  color: var(--secondary);
+  padding-bottom: 1rem;
+}
+
+.about__secondary-title--white {
+  color: var(--white);
+}
+
+.about__presentation,
+.about__skills {
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.about__presentation {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.about__skills {
+  background-color: var(--primary);
+  color: var(--white);
 }

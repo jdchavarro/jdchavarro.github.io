@@ -23,3 +23,9 @@
     max-width: 192rem;
     margin-left: calc((100vw - 192rem) / 2);
 }
+
+/* ABOUT */
+.about__presentation,
+.about__skills {
+  padding: 4rem 4rem;
+}
