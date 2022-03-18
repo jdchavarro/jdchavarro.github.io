@@ -94,3 +94,13 @@
 .portfolio__see-all {
   font-size: var(--md);
 }
+
+/* VIDEOS */
+.videos {
+  font-size: var(--md);
+}
+
+.videos__list {
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}

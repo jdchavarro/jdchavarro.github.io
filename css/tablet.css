@@ -82,3 +82,29 @@
 .portfolio__see-all {
   font-size: var(--sm);
 }
+
+/* VIDEOS */
+.videos {
+  font-size: var(--sm);
+}
+
+.videos__list {
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.videos__channel {
+  font-size: var(--sm);
+}
+
+/* CONTACT */
+.contact {
+  height: 8rem;
+  font-size: var(--sm);
+}
+
+/* FOOTER */
+.footer {
+  height: 8rem;
+  font-size: var(--sm);
+}
