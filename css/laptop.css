@@ -69,3 +69,28 @@
 .about__skills {
   padding: 4rem 2rem;
 }
+
+/* PORTFOLIO */
+.portfolio {
+  font-size: var(--md);
+}
+
+.portfolio__work,
+.portfolio__personal {
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio__secondary-title {
+  padding-bottom: 1.5rem;
+}
+
+.portfolio .bx,
+.portfolio__secondary-title,
+.portfolio__see-all {
+  grid-column: 1 / 4;
+}
+
+.portfolio__see-all {
+  font-size: var(--md);
+}

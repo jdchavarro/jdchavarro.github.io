@@ -170,3 +170,55 @@
   background-color: var(--primary);
   color: var(--white);
 }
+
+/* PORTFOLIO */
+.portfolio {
+  display: grid;
+  justify-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: var(--xsm);
+}
+
+.portfolio__main-title {
+  color: var(--primary);
+  padding: 1rem 2rem;
+}
+
+.portfolio__work,
+.portfolio__personal {
+  padding: 2rem 2rem;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.portfolio .bx {
+  font-size: var(--md);
+  color: var(--secondary);
+}
+
+.portfolio__secondary-title {
+  color: var(--secondary);
+  padding-bottom: 1rem;
+}
+
+.portfolio__card {
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #000;
+}
+
+.portfolio__see-all {
+  text-decoration: none;
+  font-size: var(--xsm);
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__see-all,
+.portfolio__see-all .bx,
+.portfolio__see-all:hover,
+.portfolio__see-all:visited,
+.portfolio__see-all:active {
+  color: var(--light);
+}
