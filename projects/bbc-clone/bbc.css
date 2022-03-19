@@ -1,0 +1,211 @@
+/* Formateo de etiquetas */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+/* Clase eliminadora de flotantes */
+.clear{
+    clear: both;
+}
+/* Clase eliminadora de bordes*/
+.no-border{
+    border: none !important;
+}
+/* Elementos de Barra Superior */
+#topbar{
+    width: 1100px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+#topbar #logo{
+    margin: 8px;
+    width: 84px;
+    height: 24px;
+    float: left;
+}
+#topbar .topbar-section{
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    height: 100%;
+}
+#topbar #sign-in #signin-imagen{
+    width: 30px;
+    margin: 5px 6px;
+    float: left;
+}
+#topbar #sign-in #signin-texto{
+    font-weight: bold;
+    font-size: 85%;
+    position: relative;
+    top: 10px;
+    padding-right: 60px;
+}
+#topbar .topbar-menu{
+    font-weight: bold;
+    font-size: 85%;
+    padding: 13px 15px 0px 15px;
+    height: 27px;
+}
+#topbar #more-arrow{
+    margin-left: 60px;
+}
+#topbar #search-box{
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 22px;
+    float: left;
+    margin: 9px 0px 9px 5px;
+}
+#topbar #lupa{
+    margin-top:9px;
+}
+/* Segunda Barra de Menus*/
+#menu-bar-container{
+    background-color: #BB1919;
+    width: 100%;
+    height: 70px;
+}
+#menu-bar-container #menu-bar{
+    width: 1100px;
+    margin: 0 auto;
+    border-top: 1px solid #CCCCCC;
+}
+#menu-bar-container #menu-bar h1{
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+#menu-bar-container2{
+    background-color: #A91717;
+    width: 100%;
+    height: 40px;
+}
+#menu-bar-container2 #menu-bar2{
+    width: 1100px;
+    margin: 0 auto;
+}
+#menu-bar-container2 #menu-bar2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-right: 1px solid #B84545;
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+}
+#menu-bar-container2 #menu-bar2 a:hover{
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    border-right: 1px solid #B84545;
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+}
+#menu-bar-container2 #menu-bar2 #arrow-red-down{
+    position: relative;
+    top: 13px;
+}
+/* Cuerpo del documento */
+#page-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+#page-container h2{
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 3px solid #BB1919;
+    width: 105px;
+}
+/* -Articulo Principal izquierdo- */
+/* --Resumen-- */
+#page-container #main-article #summary-container{
+    float: left;
+    width: 680px;
+    border-right: 1px solid #CCCCCC;
+    padding-right: 20px;
+}
+#page-container #main-article #summary-container h3 a{
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+}
+#page-container #main-article #summary-container h3 a:hover{
+    color: #1167AB;
+}
+#page-container #main-article #summary-container #article-summary{
+    color: #5A5A5A;
+    width: 240px;
+    float: left;
+}
+#page-container #main-article #summary-container #article-summary p img{
+    position: relative;
+    top: 2px;
+    padding-right: 4px;
+}
+#page-container .date{
+    padding-right: 8px;
+    font-size: 14px;
+}
+#page-container .linea-separadora{
+    text-decoration: none;
+    color: #A91717;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 10px;
+}
+#page-container .linea-separadora:hover{
+    color: #1167AB;
+}
+#page-container #main-article #summary-container #summary-image{
+    width: 400px;
+    margin-left: 20px;
+}
+#page-container #main-article #summary-container #article-hr{
+    border-top: 1px solid #991717;
+    width: 50px;
+}
+#page-container #main-article #summary-container p .article-link{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#page-container #main-article #summary-container p .article-link:hover{
+    color: #1167AB;
+}
+/* -Articulo Derecho -*/
+#page-container #watch-listen{
+    margin-left: 20px;
+    width: 360px;
+    float: right;
+    position: relative;
+    top: -445px;
+    left: -20px;
+}
+#page-container #watch-listen h4{
+    font-size: 26px;
+    font-weight: normal;
+}
+#page-container #watch-listen .article-side-image{
+    float: left;
+    width: 120px;
+    margin-right: 15px;
+}
+#page-container #watch-listen .watch-listen-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+#page-container #watch-listen .watch-listen-link:hover{
+    color: #1167AB;
+}

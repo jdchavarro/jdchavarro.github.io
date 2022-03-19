@@ -1,0 +1,463 @@
+:root {
+  --azul: #0079ff;
+  --rojo: #ff2b19;
+  --verde: #9bb209;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+button, input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  height: 60px;
+}
+header .logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 14px;
+}
+header .titulo {
+  font-family: 'Berkshire Swash', cursive;
+  position: absolute;
+  font-size: 1.5em;
+  left: 70px;
+}
+header .mostrar-menu {
+  background: var(--azul);
+  border: none;
+  border-radius: 40%;
+  color: white;
+  font-size: 1.4em;
+  height: 30px;
+  padding-top: 3px;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  top: 15px;
+  width: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: url("../img/jumbotron.jpg") no-repeat center;
+  background-size: 100% 300px;
+  height: 300px;
+  opacity: 0.78;
+  text-align: center;
+}
+.jumbotron h2 {
+  color: white;
+  font-weight: 400;
+  margin: 20px auto;
+  width: 80%;
+}
+.jumbotron p {
+  background: rgba(255, 255, 255, .8);
+  border-radius: 20px;
+  color: var(--azul);
+  font-style: italic;
+  font-size: .8em;
+  margin: 40px auto;
+  padding: 10px;
+  width: 80%;
+}
+.jumbotron button {
+  border: none;
+  background: var(--azul);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* servicio */
+.servicio {
+  text-align: center;
+  border-bottom: 3px solid;
+}
+.servicio h3 {
+  font-size: 1em;
+}
+.servicio img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  margin-left: 20px;
+}
+.servicio p {
+  font-style: italic;
+  font-size: .7em;
+  margin: 20px;
+}
+.servicio a {
+  outline: 1px solid red;
+}
+.servicio button {
+  background: white;
+  border: 2px solid;
+  border-radius: 6px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+
+/* Servicio Izq */
+.servicio-izq {
+  border-bottom-color: rgba(255,43,25,.3);
+}
+.servicio-izq h3 {
+  color: var(--rojo);
+}
+.servicio-izq button {
+  border-color: var(--rojo);
+  color: var(--rojo);
+}
+
+/* Servicio Cen */
+.servicio-cen {
+  border-bottom-color: rgba(155,178,9,.3);
+}
+.servicio-cen h3 {
+  color: var(--verde);
+}
+.servicio-cen button {
+  border-color: var(--verde);
+  color: var(--verde);
+}
+
+/* Servicio Der */
+.servicio-der {
+  border-bottom-color: rgba(0,121,255,.3);
+}
+.servicio-der h3 {
+  color: var(--azul);
+}
+.servicio-der button {
+  border-color: var(--azul);
+  color: var(--azul);
+}
+
+/* Educacion */
+.educacion {
+  background: url("../img/educacion.jpg") center no-repeat;
+  background-size: 100% 200px;
+  height: 200px;
+}
+.educacion h3 {
+  color: var(--azul);
+  font-size: 1em;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.educacion p {
+  color: var(--rojo);
+  margin-left: 20px;
+}
+.educacion button {
+  background: none;
+  border: 2px solid var(--verde);
+  border-radius: 6px;
+  color: var(--verde);
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+/* Contáctanos */
+footer {
+  background-color: #125EB2;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+footer p {
+  margin-top: 30px;
+}
+footer .icon {
+  border-radius: 50%;
+  padding: 6px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+footer .icon-email {
+  background: rgb(101, 158, 223);
+}
+footer .icon-phone {
+  background: rgb(28, 71, 121);
+}
+footer .icon-gps {
+  background: rgb(129, 148, 170);
+}
+footer .icon-youtube {
+  background: rgb(255, 93, 93);
+}
+footer .icon-facebook {
+  background: rgb(93, 123, 255);
+}
+footer .icon-instagram {
+  background: rgb(255, 179, 93);
+}
+footer .icon-twitter {
+  background: rgb(93, 204, 255);
+}
+
+/* Escribenos */
+.escribenos {
+  text-align: center;
+}
+.escribenos form {
+  margin: auto;
+  width: 80%;
+}
+.escribenos form > * {
+  width: 80%;
+  margin: 5% auto;
+  display: block;
+}
+.escribenos form input[type="submit"] {
+  background-color: var(--azul);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* Definimos el grid container */
+main {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "jumbotron"
+  "servicio-izq"
+  "servicio-cen"
+  "servicio-der"
+  "educacion"
+  "footer"
+  "escribenos";
+}
+
+.servicio {
+  display: grid;
+  grid-template-areas:
+  "titulo titulo titulo"
+  "imagen parrafo parrafo"
+  ". boton boton";
+}
+
+/* Nombramos los elementos */
+header {
+  grid-area: header;
+}
+.jumbotron {
+  grid-area: jumbotron;
+}
+.servicio-izq {
+  grid-area: servicio-izq;
+}
+.servicio-cen {
+  grid-area: servicio-cen;
+}
+.servicio-der {
+  grid-area: servicio-der;
+}
+.educacion {
+  grid-area: educacion;
+}
+.escribenos {
+  grid-area: escribenos;
+}
+footer {
+  grid-area: footer;
+}
+.servicio h3 {
+  grid-area: titulo;
+}
+.servicio img {
+  grid-area: imagen;
+}
+.servicio p {
+  grid-area: parrafo;
+}
+.servicio button {
+  grid-area: boton;
+}
+
+@media (min-width:480px) {
+  .jumbotron p {
+    width: 60%;
+  }
+  .servicio h3 {
+    font-size: 1.5em;
+  }
+  .servicio img {
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+  }
+  .servicio p {
+    font-size: 1em;
+  }
+  .educacion h3 {
+    margin-left: 70px;
+  }
+  .educacion p {
+    margin-left: 70px;
+  }
+  .educacion button {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width:720px) {
+  main {
+    grid-template-areas: 
+    "header header"
+    "jumbotron jumbotron"
+    "servicio-izq servicio-cen"
+    "servicio-der educacion"
+    "footer footer"
+    "escribenos escribenos";
+  }
+  header {
+    height: 80px;
+  }
+  header .logo {
+    width: 70px;
+    height: 70px;
+  }
+  header .titulo {
+    font-size: 2em;
+    left: 100px;
+  }
+  header .mostrar-menu {
+    font-size: 2em;
+    height: 40px;
+    right: 25px;
+    top: 20px;
+    width: 50px;
+  }
+  .jumbotron h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 30px;
+  }
+  .jumbotron p{
+    font-size: 1.2em;
+  }
+  .educacion {
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  .educacion h3 {
+    font-size: 1.4em;
+    margin-left: 20px;
+  }
+  .educacion p {
+    margin-left: 30px;
+  }
+  .educacion button {
+    margin-left: 70px;
+  }
+}
+
+@media (min-width:1024px) {
+  main {
+    grid-template-areas: 
+    "header header header"
+    "jumbotron jumbotron jumbotron"
+    "servicio-izq servicio-cen servicio-der"
+    "educacion footer footer"
+    "escribenos escribenos escribenos";
+  }
+  header {
+    height: 80px;
+  }
+  header .logo {
+    width: 70px;
+    height: 70px;
+  }
+  header .titulo {
+    font-size: 2em;
+    left: 100px;
+  }
+  header .mostrar-menu {
+    font-size: 2em;
+    height: 40px;
+    right: 25px;
+    top: 20px;
+    width: 50px;
+  }
+  .jumbotron {
+    background-size: 100% 500px;
+    height: 500px;
+  }
+  .jumbotron h2 {
+    font-size: 3em;
+    font-weight: 1500;
+    margin-top: 50px;
+  }
+  .jumbotron p{
+    font-size: 1.8em;
+    margin-top: 60px;
+    padding: 30px;
+  }
+  .jumbotron button {
+    font-size: 2em;
+    padding: -10px;
+  }
+  .servicio h3 {
+    font-size: 1.2em;
+  }
+  .servicio img {
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  .educacion {
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  .educacion h3 {
+    font-size: 1.2em;
+    margin-left: 20px;
+  }
+  .educacion p {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .educacion button {
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    grid-template-areas: 
+    "header header header"
+    "jumbotron jumbotron jumbotron"
+    "servicio-izq servicio-cen servicio-der"
+    "educacion escribenos escribenos"
+    "footer escribenos escribenos";
+  }
+  .educacion h3 {
+    margin-top: 80px;
+  }
+  footer p {
+    margin-top: 80px;
+  }
+  .escribenos h3 {
+    font-size: 2em;
+  }
+}

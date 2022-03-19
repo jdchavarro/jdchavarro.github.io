@@ -1,26 +1,3 @@
-:root {
-  --primary: #355691;
-  --secondary: #5f5aa2;
-  --light: #3f4045;
-  --dark: #30292f;
-  --grey: #413f54;
-  --white: white;
-
-  font-size: 62.5%;
-
-  --xsm: 1.2rem;
-  --sm: 1.8rem;
-  --md: 3.6rem;
-  --lg: 5.4rem;
-  --xlg: 9rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* jumbotron */
 
 .jumbotron {
@@ -206,6 +183,12 @@
   width: 25rem;
   height: 25rem;
   border: 1px solid #000;
+}
+
+.portfolio__card img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
 }
 
 .portfolio__see-all {
