@@ -1,0 +1,34 @@
+.projects-list {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  width: 25rem;
+  height: 35rem;
+  border: 1px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato", serif;
+}
+
+.project-card__image {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border: 1px solid var(--secondary);
+}
+
+.project-card__name {
+  color: var(--primary);
+  font-size: var(--sm);
+  font-weight: bold;
+}
+
+.project-card__description {
+    text-align: center;
+}
