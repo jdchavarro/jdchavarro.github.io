@@ -1,0 +1,340 @@
+:root {
+  --light: #EAE8FF;
+  --dark: #2D3142;
+  --primary: #B0D7FF;
+  --secondary: #ADACB5;
+  --tertiary: #D8D5DB;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../assets/fonts/b009a76ad6afe4ebd301.woff2) format('woff2'),
+		url(../assets/fonts/f1e2a76794cb86b2aa8e.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(../assets/fonts/405055dd680fa1dcdfa2.woff2) format('woff2'),
+		url(../assets/fonts/f61407da33b59324fbef.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  background-color: var(--light);
+  font-family: poppins;
+}
+
+/* INDEX */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+}
+
+.header__title {
+  font-family: roboto;
+  color: var(--primary);
+}
+
+.header__description {
+  font-family: poppins;
+  color: var(--secondary);
+}
+
+.principal-menu {
+  padding-top: 1rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.card__title {
+  font-family: roboto;
+  width: fit-content;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.card__icon {
+  font-size: 6rem;
+  color: var(--primary);
+}
+
+.card__description {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* DESCUENTOS */
+
+.discount_form__input_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.discount_form__label {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.discount_form__input {
+  width: 80%;
+  height: 3rem;
+}
+
+/* FIGURAS */
+
+.shapes-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  border: 1px solid var(--dark);
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.shapes-menu__shapes {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  color: var(--secondary);
+  font-size: 3rem;
+}
+
+.shapes-menu__shape:hover {
+  cursor: pointer;
+}
+
+.shapes-menu__shape--rot {
+  transform: rotate(270deg);
+}
+
+.shapes-form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.shapes-form__button {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+
+/* MENSAJES */
+.messages {
+  margin: 2rem;
+  text-align: center;
+}
+
+.messages__item > span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* MEDIDAS DE TENCENDIA CENTRAL */
+.mtc-form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.mtc-form__button {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+
+/** CLASES COMPARTIDAS ENTRE ARCHIVOS */
+
+.goBack {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.goBack__button {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--primary);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 2rem;
+    font-size: 2rem;
+  }
+
+  .principal-menu {
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  .card {
+    width: 30rem;
+    height: 30rem;
+    font-size: 2rem;
+  }
+
+  .card__title {
+    border-bottom-width: 2px;
+  }
+
+  .card__icon {
+    font-size: 8rem;
+  }
+
+  .discount_form {
+    width: 600px;
+    margin: auto;
+  }
+
+  /* FIGURAS */
+
+  .shapes-menu {
+    margin: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .shapes-menu__shapes {
+    font-size: 6rem;
+  }
+
+  .shapes-form {
+    font-size: 4.5rem;
+  }
+
+  .shapes-form input {
+    width: 75%;
+    height: 4rem;
+    font-size: 3rem;
+  }
+
+  .shapes-form__button {
+    font-size: 2rem;
+  }
+
+  /* MENSAJES */
+  .messages {
+    font-size: 2.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .goBack__button {
+    font-size: 2.5rem;
+  }
+
+  /* MEDIDAS DE TENCENDIA CENTRAL */
+.mtc-form {
+  font-size: 4.5rem;
+}
+
+.mtc-form input {
+  width: 75%;
+  height: 4rem;
+  font-size: 3rem;
+}
+
+.mtc-form__button {
+  font-size: 2rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    margin: 3rem;
+    font-size: 3rem;
+  }
+  
+  .principal-menu {
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4rem;
+  }
+  
+  .card {
+    font-size: 2rem;
+  }
+  
+  .card__title {
+    border-bottom-width: 3px;
+  }
+  
+  .card__icon {
+    font-size: 10rem;
+  }
+
+  .discount_form__label {
+    font-size: 3rem;
+  }
+
+  .discount_form__input {
+    height: 4rem;
+  }
+
+  /* FIGURAS */
+
+  .shapes-menu {
+    width: 75%;
+    margin: 4rem auto;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    width: 1600px;
+    margin: 0 auto;
+  }
+}
