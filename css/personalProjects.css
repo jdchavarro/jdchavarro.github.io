@@ -1,5 +1,6 @@
 .projects-list {
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   justify-items: center;
   gap: 2rem;
   margin-top: 2rem;
@@ -48,4 +49,21 @@
 .project-card__demo:visited,
 .project-card__demo:active {
   color: var(--secondary);
+}
+
+@media screen and (min-width: 768px){
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects-list {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
