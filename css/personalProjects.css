@@ -8,13 +8,14 @@
 
 .project-card {
   width: 25rem;
-  height: 35rem;
+  /* height: 35rem; */
   border: 1px solid var(--secondary);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-family: 'Lato', serif;
+  text-align: center;
 }
 
 .project-card a:last-child {
@@ -30,13 +31,20 @@
 
 .project-card__name {
   color: var(--primary);
-  font-size: var(--sm);
+  font-size: var(--md);
   font-weight: bold;
 }
+
+.project-card__technologies {
+  font-size: var(--sm);
+  color: var(--secondary);
+}
+
 
 .project-card__source,
 .project-card__demo {
   text-decoration: none;
+  font-size: var(--sm);
 }
 
 .project-card__source,

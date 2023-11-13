@@ -19,16 +19,23 @@
 .project-card__image {
   width: 25rem;
   height: 25rem;
-  object-fit: cover;
+  /* object-fit: cover; */
   border: 1px solid var(--secondary);
 }
 
 .project-card__name {
   color: var(--primary);
-  font-size: var(--sm);
+  font-size: var(--md);
+  text-align: center;
   font-weight: bold;
+}
+
+.project-card__technologies {
+  font-size: var(--sm);
+  color: var(--secondary);
 }
 
 .project-card__description {
     text-align: center;
+    font-size: var(--sm);
 }

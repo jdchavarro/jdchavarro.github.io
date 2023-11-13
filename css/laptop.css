@@ -7,20 +7,14 @@
 
 .jumbotron__description {
   row-gap: 1.5rem;
-  font-size: var(--lg);
+  padding-top: 2rem;
+  max-width: 768px;
 }
 
-.jumbotron__phrase {
-  font-size: var(--md);
-}
-
-.jumbotron__social-media {
-  font-size: var(--lg);
-}
 
 /* navbar */
 .navbar {
-  font-size: var(--sm);
+  font-size: calc(var(--sm)*1.5);
   position: sticky;
   top: 0px;
   padding-top: 0;
@@ -59,6 +53,7 @@
 /* ABOUT */
 .about {
   grid-template-columns: 1fr 1fr;
+  font-size: var(--sm);
 }
 
 .about__main-title {
@@ -70,6 +65,14 @@
   padding: 4rem 2rem;
 }
 
+.about__presentation {
+  padding-left: calc(100vw / 6);
+}
+
+.about__skills {
+  padding-right: calc(100vw / 6);
+} 
+
 /* PORTFOLIO */
 .portfolio {
   font-size: var(--md);
@@ -79,6 +82,11 @@
 .portfolio__personal {
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio__card {
+  width: 25rem;
+  height: 25rem;
 }
 
 .portfolio__secondary-title {
@@ -98,6 +106,11 @@
 /* VIDEOS */
 .videos {
   font-size: var(--md);
+}
+
+.videos__card {
+  width: 25rem;
+  height: 25rem;
 }
 
 .videos__list {
